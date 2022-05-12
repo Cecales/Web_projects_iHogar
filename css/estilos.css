@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Acme|Baloo+Thambi|Coda+Caption:800|Major+Mono+Display|Muli|Raleway|Righteous|Teko|Ubuntu');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Abel', bold;
+    margin: 0;
+}
+
+/*--------------------Estilos--Base------------------*/
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column {
+    width: 100%;
+}
+
+/*--------------------Estilos--Header----------------*/
+
+.main-header {
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.5em;
+    color: cornflowerblue;
+    padding: 10px;
+    font-family: 'Baloo Thambi', bold;
+    
+}
+
+.main-header [class*="icon-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+.social-icon {
+    padding-right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icon [class*="icon-"] {
+    color: cornflowerblue;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    
+}
+.social-icon__link {
+    text-decoration: none;
+}
+/*--------------------Estilos--Menu------------------*/
+
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+    background: rgba(0,0,0,0.7);
+}
+.icon-bars {
+    display: block;
+    color: cornflowerblue;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.8em;
+}
+
+.menu {
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+    
+}
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.menu__link:hover {
+    background: rgba(255,255,255,0.2);
+}
+.menu__link--select {
+    color: white; 
+}
+.mostrar {
+    height: 255px;
+}
+
+/*--------------------Estilos--Banner----------------*/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+}
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+    top: 0;
+}
+.banner__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.banner__content {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*--------------------Estilos--Principales-----------*/
+
+.group--color .container {
+    background: cornflowerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Abel', bold;
+}
+
+.main__txt {
+    padding: 20px;
+    text-align: justify;
+}
+
+.column__title {
+    font-size: 1.3em;
+}
+
+.main__about__description .column__title {
+    text-align: center;
+}
+
+.main__about__description .column__txt {
+    text-align: justify;
+}
+
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: cornflowerblue;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.btn:hover {
+    background: white;
+    color: cornflowerblue;
+    border: 2px solid;
+}
+
+.group__title{
+    font-family: 'Baloo Thambi';
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 30px;
+    z-index: 1000px;
+}
+
+.special .column {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.special__img {
+    margin: auto;
+    max-width: 350px;
+} 
+.special__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: cornflowerblue;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.special__info {
+    background: cornflowerblue;
+    color: white;
+    margin: 10px;
+}
+
+/*--------------------Estilos--footer----------------*/
+
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+/*--------------------Estilos--responsive------------*/
+
+@media screen and (min-width:480px) {
+    .logo {
+        color: white;
+        font-size: 4em;
+    }
+    .main-header__contactInfo {
+        text-align: right;
+    }
+    .icon-bars {
+        color: white;
+    }
+    .social-icon [class*="icon-"] {
+        color: white;
+    }
+    .menu__link {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    .menu__link:hover {
+        color: cornflowerblue;
+        background: none;
+    }
+    .menu__link--select {
+        color: cornflowerblue;
+    }
+    .banner {
+        margin-top: -300px;
+        z-index: -1000;
+    }
+    .banner__content {
+        font-size: 2em;
+        margin-top: 100px;
+    }
+    .main-footer .container--flex {
+        align-items: flex-start;
+    }
+    .column--50 {
+        width: 50%;
+    }
+    .column--50--25 {
+        width: 49%;
+    }
+    .column--33 {
+        width: 32%;
+    }
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px;
+        font-size: .9em;
+    }
+    .special .column {
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .special__img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+    .main-nav {
+        padding: 0;
+        background: none;
+    }
+    .banner__content {
+        font-size: 2.5em;
+        margin-top: 60px;
+    }
+    .icon-bars {
+        display: none;
+    }
+    .social-icon {
+        margin-left: 77%;
+        margin-top: -6%;
+    }
+    .menu {
+        background: none;  
+        position: static;
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+    .menu__link {
+        padding: 20px;
+        align-items: flex-start;
+    }
+    .menu__link:hover {
+        color: cornflowerblue;
+        background: none;
+    }
+    .menu__link--select {
+        color: cornflowerblue;
+    }
+    
+    .banner {
+        margin-top: -300px;
+        z-index: -1000;
+    }
+    .banner__img {
+        width: 100%;
+        height: 900px;
+        object-fit: cover;
+    }
+    .main__title {
+        font-size: 2.2em;
+    }
+    .main__about__description {
+        margin-top: 30px;
+    }
+    .main__about__description .column__title {
+        font-size: 1.5em;
+    }
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 30px;
+    }
+    .column--50--25 {
+        width: 24.5%;
+    }
+    .column__title {
+        font-size: 1em;
+    }
+    .group__title {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    .container {
+        width: 1000px;
+    }
+    .logo {
+        font-size: 5em;
+        padding: 0;
+    }
+    .main-header__contactInfo__phone, .main-header__contactInfo__whatsapp, 
+    .main-header__contactInfo__address {
+        padding-right: 0;
+        font-size: 1.15em;
+    }
+    
+    .group--color .container {
+        margin-top: -40px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .main__title {
+        font-size: 2.3em;
+    }
+    .main__about__description .column__title {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 35px;
+        font-size: 1.3em;
+    }
+    .special__title {
+        font-size: 1.7em;
+    }
+    .main-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .container {
+        width: 1400px;
+    }
+    .main__about__description .column:nth-child(1) img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .special__img {
+        height: 300px;
+    }
+}
+
